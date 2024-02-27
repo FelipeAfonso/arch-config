@@ -1,4 +1,5 @@
 #!/bin/fish
 rm -rf ./dmenu ./dwm ./slstatus ./us-keyboard-mod
-cp -r /lib/dmenu /lib/dwm /lib/slstatus -t ./
-cp /usr/share/X11/xkb/symbols/us ./us-keyboard-mod
+sudo cp -r /lib/dmenu /lib/dwm /lib/slstatus -t ./
+sudo cp /usr/share/X11/xkb/symbols/us ./us-keyboard-mod
+sudo chmod -R 777 ./dmenu ./dwm ./slstatus ./us-keyboard-mod
