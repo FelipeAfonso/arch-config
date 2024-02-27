@@ -1,12 +1,3 @@
 [submodule "dot-files"]
 	path = dot-files
 	url = https://github.com/FelipeAfonso/dot-files.git
-[submodule "slstatus"]
-	path = slstatus
-	url = /lib/slstatus
-[submodule "dwm"]
-	path = dwm
-	url = /lib/dwm
-[submodule "dmenu"]
-	path = dmenu
-	url = /lib/dmenu

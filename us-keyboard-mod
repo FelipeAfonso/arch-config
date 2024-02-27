@@ -58,6 +58,19 @@ xkb_symbols "basic" {
 };
 
 partial alphanumeric_keys
+xkb_symbols "intl-mod" {
+
+    include "us(basic)"
+    name[Group1]= "English modded (US, intl., with dead keys)";
+
+    key <TLDE> { [grave,       asciitilde, dead_tilde, dead_circumflex         ] };
+    key <AC11> { [apostrophe,        quotedbl, dead_acute, dead_grave  ] };
+    key <AB03> { [	   c,          C,     ccedilla,             Ccedilla ] };
+
+    include "level3(ralt_switch)"
+};
+
+partial alphanumeric_keys
 xkb_symbols "euro" {
 
     include "us(basic)"
@@ -82,19 +95,6 @@ xkb_symbols "ibm238l" {
     key <BKSL> {        [     grave,    asciitilde ]       };
     key <LSGT> {        [ backslash,    bar        ]       };
     key <TLDE> {        [      less,    greater    ]       };
-};
-
-partial alphanumeric_keys
-xkb_symbols "intl-mod" {
-
-    include "us(basic)"
-    name[Group1]= "English modded (US, intl., with dead keys)";
-
-    key <TLDE> { [grave,       asciitilde, dead_tilde, dead_circumflex         ] };
-    key <AC11> { [apostrophe,        quotedbl, dead_acute, dead_grave  ] };
-    key <AB03> { [	   c,          C,     ccedilla,             Ccedilla ] };
-
-    include "level3(ralt_switch)"
 };
 
 partial alphanumeric_keys
