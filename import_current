@@ -1,5 +1,7 @@
 #!/bin/fish
-rm -rf ./dmenu ./dwm ./slstatus ./us-keyboard-mod
-sudo cp -r /lib/dmenu /lib/dwm /lib/slstatus -t ./
+rm -rf ./dmenu ./st ./dwm ./slstatus ./us-keyboard-mod
+sudo cp -r /lib/st /lib/dmenu /lib/dwm /lib/slstatus -t ./
 sudo cp /usr/share/X11/xkb/symbols/us ./us-keyboard-mod
-sudo chmod -R 777 ./dmenu ./dwm ./slstatus ./us-keyboard-mod
+sudo chmod -R 777 ./dmenu ./st ./dwm ./slstatus ./us-keyboard-mod
+sudo chown -R felipe ./dmenu ./st ./dwm ./slstatus ./us-keyboard-mod
+rm -rf ./dmenu/.git ./st/.git ./dwm/.git ./slstatus/.git **/*.diff **/*.def.h **/*.rej **/*.orig **/patches
